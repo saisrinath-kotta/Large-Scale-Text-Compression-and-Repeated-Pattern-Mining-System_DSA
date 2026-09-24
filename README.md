@@ -16,7 +16,7 @@
 
 ---
 
-## 📚 DSA-3 Syllabus Mapping (Modules 1 to 3)
+## 📚 
 
 ### Module 1: TextHack as a System — The Advanced-Algorithm Question Bank
 * **A Working Engine on Day One:** Users issue queries against an Indian-language Wikipedia corpus (Hindi, Telugu, English) and inspect results before delving into internal mechanics.
