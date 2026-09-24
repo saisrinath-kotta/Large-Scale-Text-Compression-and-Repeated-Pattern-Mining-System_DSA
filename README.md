@@ -176,15 +176,3 @@ java -cp bin CorpusLoader data/corpus.txt
 
 ---
 
-## 🎯 Viva Preparation Guide
-
-1. **Why does KMP run in $O(n)$ search time?**  
-   The text pointer $i$ moves monotonically from $0$ to $n-1$ and never decrements. Upon a mismatch, only the pattern pointer $j$ falls back using $lps[j-1]$.
-2. **Why does Rabin-Karp perform character verification after hash equality?**  
-   Polynomial hashing maps strings into finite modulus fields ($10^9+7$). While double hashing reduces collision probability to $\approx 10^{-18}$, exact character verification is required to guarantee zero false positives.
-3. **Why does Kasai's algorithm take strict $O(n)$ time?**  
-   When moving from suffix $i$ to $i+1$ in text order, the LCP with its predecessor can drop by at most 1 ($h \ge h - 1$). Since $h$ can increase at most $n$ times (the length of the string), character comparisons are bounded by $2n$.
-4. **How does PatternMiner discover repeats without quadratic substring comparisons?**  
-   Suffixes sharing common prefixes are sorted adjacent to each other in the Suffix Array. Using an $O(n)$ LCP interval stack, any contiguous block with $\text{LCP} \ge \text{minLength}$ directly defines the repeated pattern, its frequency, and all its corpus positions.
-5. **How does Wagner-Fischer 2D DP handle edit operations?**  
-   Entry $dp[i][j]$ takes the minimum of three transitions: deletion from $s_1$ ($dp[i-1][j] + 1$), insertion into $s_1$ ($dp[i][j-1] + 1$), and substitution ($dp[i-1][j-1] + 1$, or $+ 0$ if characters match).
