@@ -1,0 +1,7 @@
+banana is a banana.
+banana patterns are repeated.
+algorithms help in pattern searching.
+pattern searching uses algorithms.
+ABABABAB
+भारत एक विशाल देश है। भारतीय संस्कृति अत्यंत समृद्ध और प्राचीन है। भारत में कई भाषाएं बोली जाती हैं।
+భారతదేశం ఒక గొప్ప దేశం. భారతీయ సంస్కృతి ఎంతో గొప్పది. భారతదేశ చరిత్ర అద్భుతమైనది.

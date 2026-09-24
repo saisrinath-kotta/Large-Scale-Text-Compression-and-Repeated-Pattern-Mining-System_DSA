@@ -1,0 +1,25 @@
+================================================================================
+TEXTHACK CORPUS: MULTILINGUAL TEXT REPOSITORY
+================================================================================
+
+SECTION 1: INTRODUCTION TO ALGORITHMS AND DATA STRUCTURES
+In computer science, an algorithm is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation. Algorithms are always unambiguous and are used as specifications for performing calculations, data processing, automated reasoning, and other tasks. In contrast, a heuristic is an approach to problem solving that may not guarantee an optimal solution.
+
+Pattern searching is an essential problem in computer science. When we search for a pattern in text, we wish to find all occurrences of a smaller string within a larger string. Suffix arrays and LCP arrays provide powerful indexing structures for pattern matching, text compression, and repeated substring mining. The suffix array stores the starting indices of all suffixes in lexicographical order, while the Kasai LCP array records the lengths of the longest common prefixes between consecutive sorted suffixes.
+
+SECTION 2: INDIAN LANGUAGES AND HERITAGE (हिंदी - HINDI)
+भारत दक्षिण एशिया में स्थित एक विशाल और ऐतिहासिक देश है। भारत की सभ्यता विश्व की सबसे प्राचीन सभ्यताओं में से एक मानी जाती है। भारतीय इतिहास में कई महान साम्राज्यों का उदय और पतन हुआ है। भारत की विविधता ही इसकी सबसे बड़ी ताकत है। भारतीय संस्कृति विभिन्न परंपराओं, त्योहारों, संगीत और कला का एक अनूठा संगम है। 
+
+भारत में कई प्रमुख भाषाएं बोली जाती हैं। हिंदी भारत में सबसे व्यापक रूप से बोली जाने वाली भाषा है। इसके अतिरिक्त, भारतीय संविधान की आठवीं अनुसूची में कई अन्य प्रमुख भाषाओं को मान्यता दी गई है। भारतीय ज्ञान परंपरा में गणित, खगोलशास्त्र, साहित्य और दर्शन का अद्वितीय योगदान रहा है। भारत के प्राचीन ग्रंथों में ज्ञान और विज्ञान की समृद्ध धरोहर मिलती है। आधुनिक युग में भारत विज्ञान, प्रौद्योगिकी और अंतरिक्ष अनुसंधान में निरंतर नए आयाम स्थापित कर रहा है।
+
+SECTION 3: TELUGU LANGUAGE AND LITERATURE (తెలుగు - TELUGU)
+భారతదేశం వివిధ సంస్కృతులు, భాషల సమాహారం. భారతదేశ చరిత్రలో ఎన్నో గొప్ప సామ్రాజ్యాలు విలసిల్లాయి. భారతీయ సంస్కృతి అత్యంత ప్రాచీనమైనది మరియు విశిష్టమైనది. భారతదేశంలో తెలుగు భాషకు ప్రత్యేకమైన స్థానం ఉంది. తెలుగు భాష భారతదేశంలోని ప్రముఖ ద్రావిడ భాషలలో ఒకటి.
+
+తెలుగు భాషను దేశభాషలందు లెస్స అని శ్రీకృష్ణదేవరాయలు కొనియాడారు. తెలుగు సాహిత్యం ప్రాచీన కాలం నుండి అద్భుతమైన గ్రంథాలతో, పద్యాలతో విలసిల్లింది. నన్నయ, తిక్కన, ఎర్రన అనే కవిత్రయం మహాభారతాన్ని తెలుగులోకి అనువదించారు. తెలుగు లిపి ఎంతో అందమైనది మరియు శాస్త్రీయమైనది. ఆంధ్రప్రదేశ్ మరియు తెలంగాణ రాష్ట్రాలలో తెలుగు అధికారిక భాషగా గుర్తింపు పొందింది. భారతీయ సాంకేతిక రంగంలో తెలుగు మాట్లాడే ప్రజలు విశేష సేవలందిస్తున్నారు.
+
+SECTION 4: COMPUTATIONAL LINGUISTICS AND REPEATED PATTERN MINING
+Large text corpora contain massive amounts of repeated substrings, idioms, standard phrases, and boilerplate text. Identifying repeated substrings without quadratic overhead requires advanced linear-time and near-linear-time algorithms. The Knuth-Morris-Pratt (KMP) algorithm preprocesses the search pattern to construct a Longest Proper Prefix which is also a Suffix (LPS) array, enabling linear-time scanning without rewinding text indices. The Z-algorithm computes the length of the longest prefix match for each position using an active [L, R] window.
+
+Rabin-Karp rolling hashes leverage polynomial hashing with modular arithmetic to verify candidate matches rapidly. When exact matches are found, suffix arrays and Kasai LCP arrays uncover maximal repeated patterns across the entire corpus. Suffix array construction orders all suffixes lexicographically, and the Kasai algorithm computes the Longest Common Prefix (LCP) array in linear O(n) time by reusing prefix match lengths from preceding suffixes.
+
+Fuzzy matching complements exact matching by detecting near-duplicate passages, typographical variations, and spelling differences. The Wagner-Fischer dynamic programming algorithm computes the Levenshtein edit distance between strings using an explicit two-dimensional table representing insertions, deletions, and substitutions. Through these coordinated algorithms, TextHack achieves high-efficiency text analytics and pattern mining across multilingual Indian corpora.
