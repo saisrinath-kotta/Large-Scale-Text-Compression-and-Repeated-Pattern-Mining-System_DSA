@@ -16,8 +16,6 @@
 
 ---
 
-## 📚 Complete DSA-3 Syllabus Mapping (Modules 1 to 6)
-
 ### Module 1: TextHack as a System — The Advanced-Algorithm Question Bank
 * **Multilingual Corpus Pipeline:** UTF-8 ingestion of Hindi, Telugu, and English text preserving Indian Unicode scripts.
 * **Algorithmic Engine Architecture:** Core algorithms built with zero external libraries.
@@ -152,19 +150,5 @@ run_server.bat
 | **Reservoir Sampling** | Module 6 | $O(N)$ streaming | $O(k)$ sample | Unbounded stream uniform sampling |
 | **Blelloch Parallel Scan** | Module 6 | $O(n)$ work, $O(\log n)$ span | $O(n)$ | Work-efficient parallel prefix sum |
 
----
-
-## 🎯 Viva Examination Preparation Highlights
-
-1. **Why does KMP achieve strictly $O(n)$ search time?**  
-   The text pointer monotonically advances from $0$ to $n-1$ and never decrements. Upon mismatch, only the pattern pointer falls back via $lps[j-1]$.
-2. **Why does Kasai's algorithm take strict $O(n)$ time?**  
-   Moving from suffix $i$ to $i+1$ drops common prefix length with predecessor by at most 1 ($h \ge h - 1$). Since $h$ decrements at most $n$ times and cannot exceed $n$, comparisons are bounded by $2n$.
-3. **What is the difference between Las Vegas and Monte Carlo algorithms?**  
-   Las Vegas algorithms (e.g. Randomised QuickSort) are always correct with randomized runtimes. Monte Carlo algorithms (e.g. Miller-Rabin) have bounded running times and are correct with high probability.
-4. **How does FKS Perfect Hashing guarantee $O(1)$ worst-case lookup?**  
-   Primary universal hashing maps $n$ items into $n$ buckets. Each bucket $i$ with $c_i$ items uses a secondary table of quadratic size $m_i = c_i^2$, which guarantees zero collisions by the Birthday Paradox while preserving $O(n)$ expected total space.
-5. **How does König's Theorem derive from Max-Flow Min-Cut?**  
-   Bipartite matching is modeled as a unit network flow. Residual reachability from the Source yields an $S-T$ cut; left vertices outside $S$ and right vertices inside $S$ form a vertex cover whose size equals the max flow and max matching.
-6. **Explain Work, Span, and Brent's Theorem.**  
+  
    Work $T_1$ is sequential operations; Span $T_\infty$ is the critical dependency path. Brent's theorem states $T_p \le (T_1 / P) + T_\infty$, proving the speedup ceiling is bounded by $T_1 / T_\infty$.
