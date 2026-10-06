@@ -12,8 +12,8 @@ if %ERRORLEVEL% EQU 0 (
 
 if not exist bin mkdir bin
 
-echo Compiling TextHack source files (Java 8+ compatible, UTF-8)...
-%JAVAC_CMD% --release 8 -Xlint:-options -encoding UTF-8 -d bin -sourcepath src src\*.java
+echo Compiling TextHack source files (UTF-8, all modules 1-6 + WebServer)...
+%JAVAC_CMD% -encoding UTF-8 -d bin -sourcepath src src\*.java
 
 if %ERRORLEVEL% EQU 0 (
     echo [SUCCESS] Compilation completed into 'bin' directory.

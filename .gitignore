@@ -1,0 +1,4 @@
+bin/
+*.class
+generate_pptx.zip
+active_port.txt
